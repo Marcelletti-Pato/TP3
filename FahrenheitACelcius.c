@@ -11,7 +11,7 @@
 #define UPPER 300 /* límite superior */
 #define STEP 20 /* tamaño del incremento */
 
-main ()
+main (void)
 {
 	int fahr;
 	printf("Grados\tFahrenheit\n");
