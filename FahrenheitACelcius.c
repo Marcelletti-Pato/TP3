@@ -10,13 +10,22 @@
 	const int LOWER = 0; /* límite inferior de la tabla */
 	const int UPPER = 300; /* límite superior */
 	const int STEP = 20; /* tamaño del incremento */
+	float getCelcius(float fahr);
 
-int main (void)
+int main(void)
+
 {
-	int fahr;
+	float fahr;
 	printf("Grados\tFahrenheit\n");
 	for (fahr = LOWER ;fahr <= UPPER ;fahr = fahr + STEP)
-		printf("%3d \t%6.1f\n", fahr, (5.0/9.0)*(fahr-32));
+		printf("%3f\t%6.1f\n",fahr,(getCelcius(fahr)));
 
 return 0;
+}
+
+float getCelcius(float fahr)
+{
+	float grados;
+	grados = ((5.0/9.0)*(fahr-32));
+	return grados;
 }
